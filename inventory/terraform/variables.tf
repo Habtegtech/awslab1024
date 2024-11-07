@@ -4,20 +4,20 @@ variable "region" {
   type        = string
 }
 
-variable "domain" {
-  type    = string
-  default = "ajmusgrove.net"
-}
+# variable "domain" {
+#   type    = string
+#   default = "ajmusgrove.net"
+# }
 
-variable "alarm_email" {
-  type    = string
-  default = "ajmusgrove@ajmusgrove.com"
-}
+# variable "alarm_email" {
+#   type    = string
+#   default = "ajmusgrove@ajmusgrove.com"
+# }
 
-variable "route53_zone_id" {
-  type    = string
-  default = "Z0180874I88FNAEZV6FY"
-}
+# variable "route53_zone_id" {
+#   type    = string
+#   default = "Z0180874I88FNAEZV6FY"
+# }
 
 variable "service_port" {
   type    = number
@@ -34,10 +34,10 @@ variable "subnet_cidr" {
   default = "10.100.1.0/24"
 }
 
-variable "inventory_server_private_ip" {
-  type    = string
-  default = "10.100.1.10"
-}
+# variable "inventory_server_private_ip" {
+#   type    = string
+#   default = "10.100.1.10"
+# }
 
 variable "instance_type" {
   type    = string
