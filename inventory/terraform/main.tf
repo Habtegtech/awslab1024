@@ -9,14 +9,15 @@
  *  Empty Instance Profie
  */
 
+
 /***************************
  * Key Pair for Access
  ***************************/
 
  resource "aws_key_pair" "inventory" {
   key_name   = "inventoryServerKey-${terraform.workspace}"
-  public_key = file("../etc/ec2user.pub")
-}
+  public_key = file("${path.module}/../ansible/ec2user.pub")
+ }
 
 /***************************
  * Instance Section
